@@ -1,6 +1,6 @@
 :root{
   --margin-left: 200px;
-  --background-colour: rgb(238, 235, 235);
+  --background-colour: rgb(210, 215, 247);
   --text-colour: rgb(0, 9, 3);
   --text-left: left;
 
@@ -10,36 +10,31 @@
   color: black;
   background-color: var(--background-colour);
   box-sizing: border-box;
-  margin: 10px;
+  margin: 5px;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;  
 }
 
 .top-banner {
+  display: inline-block;
   position: relative;
-  text-align: var(--text-left);
-  background-color: var(--background-colour);
   margin-top: 0px;
 }
 
 h1 {
-  margin: 0px;
-  margin-left:30px;
+  margin: 10px;
   color: rgb(42, 41, 41);
   font-size: 40pt;
-  text-shadow: 3px 3px rgb(182, 178, 178);
+  text-align: var(--text-left);
+  text-shadow: 3px 3px rgb(250, 249, 249);
 }
 
 #nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 140px;
-  margin-top: 5px;
+  margin-left: 70%;
   color: black;
-  font-size: large;
+  font-size: larger;
+  padding: 20px;
 }
 
 .link:hover {
@@ -49,7 +44,7 @@ h1 {
  } 
 
  .link:visited {
-  color: rgb(42, 58, 176);
+  color: rgb(227, 46, 185);
 }
 
 #hero-img {
@@ -62,17 +57,18 @@ h1 {
   max-height: 400px;
   min-height: 200px;
   margin: 0;
+  overflow: hidden;
 }
 
 .img-banner h2 {
-  background-color:white;
+  background-color: rgba(255,255,255,0.8);
   color: black;
   z-index: 3;
   border: 5px solid black;
   position: absolute;
-  top: 40%;
-  left: 30%;
-  width: 40%; 
+  top: 50%;
+  left: 65%;
+  width: 30%; 
   padding: 20px;
   text-align: center;
   overflow: hidden;
@@ -80,17 +76,22 @@ h1 {
 }
 
 .section-heading {
-  display: blockflex;
-  flex-direction: column;
-  color:rgb(62, 63, 74);
-  width: 20%;
-  margin: 0px;
-  padding: 0px;
+  display: block;
   text-align: left;
+  margin-right: 800px;
+  color:rgb(62, 63, 74);
   font-weight: 400px;
   font-size: 30px;
-  border: 0px, 4px, 0px, 0px solid black;
   text-shadow: 3px 3px rgb(252, 251, 251);
+}
+
+#about 
+#work 
+#contact {
+  display: flex;
+  flex: column;
+  text-align: center;
+  margin-top: 500px;
 }
 
 #profile-pic {
@@ -114,71 +115,89 @@ p {
   text-align: center;
   width: 75%;
   padding-top: 35px;
-  font-size: 19px;
+  font-size: 18px;
   letter-spacing: 1.2;
 }
 
-#web-grid {
-  display: grid;
-  justify-content: center;
+.web-grid {
+  display: inline-grid;
+  justify-content: stretch;
+  align-items: stretch;
   position: relative;
-  margin-left: var(--margin-left);
-  width:80%;
-  gap: 10px;
-  grid-template-areas: repeat(4, 1fr) / repeat(2, 1fr);
-  grid-template-areas: 
-  "web1 web1"
-  "web1 web1"
-  "web2 web3"
-  "web4 web5";
+  grid-template-areas: repeat(4, 400px) / repeat(2, 400px);
+  overflow: hidden;
+  width: 70%;
+  height: auto;
+  margin-left: 20%;
 }
   
 #web1 {
-  grid-area: web1;
+  grid-area: 1 / 1 / span 2 / span 2;
 }
 
 #web2 {
-  grid-area: web2;
+  grid-area: 3 / 1 / span 1 /span 1;
 }
 
 #web3 {
-  grid-area: web3;
+  grid-area: 3 / 2 / span 1 / span 1;
 }
 
 #web4 {
-  grid-area: web4;
+  grid-area: 4 / 1 / span 1 / span 1;
 }
 
 #web5 {
-  grid-area: web5;
+  grid-area: 4 / 2 / span 1 / span 1;
 }
-  
-.web-img {
-  width: 50%;
+ 
+#web-img1 {
+  width: 95%;
   height: auto;
-  margin-left: 200px;
+  border: 5px solid gray;
+  justify-items: end;
+}
+.web-img {
+  width: 400px;
+  height: auto;;
+  border: 5px solid gray;
+  align-items: space-evenly;
+  justify-content: space-evenly;
 }
 
-.web-img:hover {
+.web-img:hover
+.web-img1:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-#contact {
-  margin-left: var(--margin-left);
-  width: 80%;
+.contact-links {
+  display: inline-flex;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 30%;
+  font-size: 12pt;
+}
+
+.web-grid a {
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  z-index: 3;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 0px;
   text-align: center;
-  
+  font-size: 80pts;
 }
 
 footer {
-  position: relative;
-  font-size: 70pt;
-  font-weight: bold;
-  background-color: rgba(43, 43, 43);
-  width: 100%;
+  position: block;
   text-align: center;
-  border: none;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  color: black;
+  background-color: rgb(43, 43, 45);;
 }
 
 #top-btn {
@@ -203,14 +222,14 @@ footer {
   background-color: rgb(95, 94, 94);
 }
 
-@media only screen and (max-width: 1240px) {
-  .page-title {
-    width: 270px;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  * {
+    width: 30%;
   }
 }
 
-@media only screen and (min-width: 480px) {
-  .page-title {
-    width: 270px;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+ * {
+    width: 80%;
   }
 }

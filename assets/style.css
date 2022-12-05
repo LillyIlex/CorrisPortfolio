@@ -1,6 +1,6 @@
 :root{
   --margin-left: 200px;
-  --background-colour: rgb(213, 213, 214);
+  --background-colour: rgb(238, 235, 235);
   --text-colour: rgb(0, 9, 3);
   --text-left: left;
 
@@ -20,9 +20,15 @@
   position: relative;
   text-align: var(--text-left);
   background-color: var(--background-colour);
-  color: var(--text-colour);
-  padding: 5px;
-  margin-top:0px;
+  margin-top: 0px;
+}
+
+h1 {
+  margin: 0px;
+  margin-left:30px;
+  color: rgb(42, 41, 41);
+  font-size: 40pt;
+  text-shadow: 3px 3px rgb(182, 178, 178);
 }
 
 #nav {
@@ -30,8 +36,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 140px;
+  margin-top: 5px;
+  color: black;
   font-size: large;
-  margin: 0px;
 }
 
 .link:hover {
@@ -41,7 +49,7 @@
  } 
 
  .link:visited {
-  color: rgb(67, 87, 212);
+  color: rgb(42, 58, 176);
 }
 
 #hero-img {
@@ -50,8 +58,10 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 300px;
-  margin: 0
+  height: 250px;
+  max-height: 400px;
+  min-height: 200px;
+  margin: 0;
 }
 
 .img-banner h2 {
@@ -60,25 +70,27 @@
   z-index: 3;
   border: 5px solid black;
   position: absolute;
-  top: 250px;
-  left: 400px;
+  top: 40%;
+  left: 30%;
   width: 40%; 
   padding: 20px;
   text-align: center;
-  overflow:hidden;
+  overflow: hidden;
+  font-size: 80pts;
 }
 
 .section-heading {
+  display: blockflex;
+  flex-direction: column;
+  color:rgb(62, 63, 74);
+  width: 20%;
   margin: 0px;
   padding: 0px;
   text-align: left;
   font-weight: 400px;
   font-size: 30px;
-  position: relative;
-  top: 750px;
-  left: 30px;
-  text-align: right;
-
+  border: 0px, 4px, 0px, 0px solid black;
+  text-shadow: 3px 3px rgb(252, 251, 251);
 }
 
 #profile-pic {
@@ -92,6 +104,11 @@
   max-width: 300px;
 }
 
+#profile-pic:hover {
+  filter: saturate(0.2);
+  transform: scale(1.15);
+}
+
 p {
   margin-left: var(--margin-left);
   text-align: center;
@@ -103,13 +120,14 @@ p {
 
 #web-grid {
   display: grid;
-  justify-content: space-between;
-  height: 400px;
+  justify-content: center;
   position: relative;
   margin-left: var(--margin-left);
+  width:80%;
   gap: 10px;
-  grid-template-areas: repeat(3, 1fr) / repeat(2, 1fr);
-  grid-area: 
+  grid-template-areas: repeat(4, 1fr) / repeat(2, 1fr);
+  grid-template-areas: 
+  "web1 web1"
   "web1 web1"
   "web2 web3"
   "web4 web5";
@@ -117,60 +135,50 @@ p {
   
 #web1 {
   grid-area: web1;
-  height:200px;
-  width: 200px;
 }
 
 #web2 {
   grid-area: web2;
-  height:200px;
-  width: 200px;
 }
 
 #web3 {
   grid-area: web3;
-  height:200px;
-  width: 200px;
 }
 
 #web4 {
   grid-area: web4;
-  height:200px;
-  width: 200px;
 }
 
 #web5 {
   grid-area: web5;
-  height:200px;
-  width: 200px;
 }
   
-footer {
-  position: absolute;
-  font-size: 150pts;
-  font-weight: bold;
-  background-color: darkgreen;
-  color: rgb(8, 43, 34);
-  width: 100%;
-  text-align: center;
-}
-
-.info {
-  margin: 20px 30px;
-  text-align: center;
-  transform: sacle(1.2)
-}
-
-.web-img{
-  height:200px;
-  width: 200px;
-  position: fixed;
+.web-img {
+  width: 50%;
+  height: auto;
+  margin-left: 200px;
 }
 
 .web-img:hover {
-  background-color: rgb(179, 177, 177);
   transform: scale(1.1);
-  border-width: 5px;
+  cursor: pointer;
+}
+
+#contact {
+  margin-left: var(--margin-left);
+  width: 80%;
+  text-align: center;
+  
+}
+
+footer {
+  position: relative;
+  font-size: 70pt;
+  font-weight: bold;
+  background-color: rgba(43, 43, 43);
+  width: 100%;
+  text-align: center;
+  border: none;
 }
 
 #top-btn {
@@ -195,7 +203,13 @@ footer {
   background-color: rgb(95, 94, 94);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1240px) {
+  .page-title {
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
   .page-title {
     width: 270px;
   }

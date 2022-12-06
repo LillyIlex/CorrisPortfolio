@@ -248,56 +248,159 @@ footer p {
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  #nav {
-    width: 200px; float: left;
+@media only screen and (max-width: 767px) {
+
+  .img-banner h1 {
+    max-width: 95vw;
+    font-size: 18pt;
+    text-align: left;
+  }
+
+  .img-banner h2,
+   #contact,
+   #about,
+   #work {
+    visibility: hidden;
+  }
+
+  #nav a {
+    margin: 5px;
+    padding: 5px;
+    font-size: 12pt;
     }
 
-  #hero-img {
-    object-fit: cover;
+  .img-banner #hero-img {
+    background-size: cover;
     width: 100vw;
-    height: 30px;
-  } 
-  
+    height: 10vh;
+    margin: 0;
+  }
   .img-banner h2 {
     position:fixed;
   }
 
-  #nav a {
+  #profile-pic {
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    width: 45vw;
+    height: auto;
+  }
 
+  .main p {
+    font-size: 11pt;
+    text-align: left;
+    margin-left: 5px;
+    width: 93vw;
+    padding-top: 5px;
   }
 
   .web-grid {
-
+    max-width: 40vw;
+    margin-left: 22px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "web1"
+    "web2"
+    "web3"
+    "web4"
+    "web5"
+    "web6";
   }
-  
+
+.web-grid a {
+  max-width: 50vw;
+  font-size: 10pt;
+  padding: 0px
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  #nav {
-  width: 200px; float: left;
+#web-img1{
+  max-width: 100%;
+} 
+
+.web-img {
+  max-width: 40vw;
+}
+
+.info a {
+  display: block;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  
+  .img-banner h1 {
+    max-width: 1400vw;
+    font-size: 24pt;
+    text-align: left;
   }
 
-  #hero-img {
-    object-fit: cover;
-    width: 100vw;
-    height:100px;
-  } 
-  
-  .img-banner h2 {
-    margin-top: 10%;
-    margin-right: 50vw
+  .img-banner h2,
+   #contact,
+   #about,
+   #work {
+  visibility: hidden;
   }
 
   #nav a {
+    margin: 5px;
+    padding: 5px;
+    font-size: 14pt;
+    }
 
+  .img-banner #hero-img {
+    background-size: cover;
+    width: 100vw;
+    height: 15vh;
+    margin: 0;
+  }
+
+  #profile-pic {
+    float: left;
+    margin: 15px;
+    padding: 5px;
+    width: 45vw;
+    height: auto;
+  }
+
+  .main p {
+    font-size: 14pt;
+    text-align: left;
+    margin-left: 5px;
+    width: 93vw;
+    padding-top: 5px;
   }
 
   .web-grid {
-
+    max-width: 40vw;
+    margin-left: 50px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "web1"
+    "web2"
+    "web3"
+    "web4"
+    "web5"
+    "web6";
   }
 
-  #top-btn {
-    left: 20px;
+.web-grid a {
+  max-width: 50vw;
+  font-size: 10pt;
+  padding: 0px
+}
+
+#web-img1{
+  max-width: 100%;
+} 
+
+.web-img {
+  max-width: 40vw;
+}
+
+.info a {
+  display: block;
+  font-size: 15pt;
+
 }
 }

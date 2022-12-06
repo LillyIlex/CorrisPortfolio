@@ -12,7 +12,9 @@ My portfolio is simple to follow. There is navigation menu at the top right whic
 * ADD SCREENSHOTS *
 
 
-Here is the link to the live site, [* LINK *](https://lillyilex.github.io/CorrisPortfolio/) , enjoy!
+Here is the link to the live [* site *],(https://lillyilex.github.io/CorrisPortfolio/) 
+
+
 
 ####Credits
 I would like to pay credit to my tutor, Husman, and the Bootcamp team for helping guide me through my journey with code so far.

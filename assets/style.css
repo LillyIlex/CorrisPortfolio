@@ -3,102 +3,102 @@
   --background-colour: rgb(210, 215, 247);
   --text-colour: rgb(0, 9, 3);
   --text-left: left;
-
+  --black: rbg(0, 0, 0,);
+  --inline-block: inline-block;
+  --block: block;
+  --black-border: 5px solid black;
+  --border: 2px solid rgb(167, 166, 166);
 }
 
 * {
   color: black;
-  background-color: var(--background-colour);
   box-sizing: border-box;
-  margin: 5px;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;  
 }
 
-.top-banner {
-  display: inline-block;
-  position: relative;
-  margin-top: 0px;
-}
-
-h1 {
-  margin: 10px;
-  color: rgb(42, 41, 41);
-  font-size: 40pt;
+.img-banner h1 {
   text-align: var(--text-left);
-  text-shadow: 3px 3px rgb(250, 249, 249);
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  color: rgb(131, 130, 130);
+  font-size: 40pt;
+  text-shadow: 3px 3px rgb(40, 40, 40);
+  background-color: rgba(255,255,255,0.6);
+  z-index: 4;
+  border: 2px solid rgb(167, 166, 166);
+  padding: 10px;
 }
 
-#nav {
-  margin-left: 70%;
+.img-banner #hero-img {
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 250px;
+  opacity: 0.4;;
+}
+
+.img-banner h2 {
+  text-align: center;
+  position: absolute;
+  top: 25vh;
+  left: 45vw;
+  background-color: rgba(255,255,255,0.5);
   color: black;
-  font-size: larger;
-  padding: 20px;
+  z-index: 3;
+  border: 2px solid rgb(14, 14, 14);
+  padding: 10px;
+}
+
+#nav a{
+  float: right;
+  color: #1a1919;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .link:hover {
   transform: scale(1.2);
   cursor: pointer;
   transition-timing-function: linear;
- } 
+} 
 
- .link:visited {
+.link:visited {
   color: rgb(227, 46, 185);
 }
 
-#hero-img {
-  background-image: linear-gradient();
-  background-repeat: none;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  max-height: 400px;
-  min-height: 200px;
-  margin: 0;
-  overflow: hidden;
-}
-
-.img-banner h2 {
-  background-color: rgba(255,255,255,0.8);
-  color: black;
-  z-index: 3;
-  border: 5px solid black;
-  position: absolute;
-  top: 50%;
-  left: 65%;
-  width: 30%; 
-  padding: 20px;
-  text-align: center;
-  overflow: hidden;
-  font-size: 80pts;
-}
-
 .section-heading {
-  display: block;
   text-align: left;
-  margin-right: 800px;
-  color:rgb(62, 63, 74);
+  position: absolute;
+  color:rgb(62, 62, 62);
   font-weight: 400px;
-  font-size: 30px;
-  text-shadow: 3px 3px rgb(252, 251, 251);
+  font-size: 40px;
 }
 
-#about 
-#work 
+#about {
+  margin-left: 20px;
+}
+
+#work {
+  margin-left: 100px;
+}
+
 #contact {
-  display: flex;
-  flex: column;
-  text-align: center;
-  margin-top: 500px;
+  margin-left: 10px;
+  margin-right: 200px;
 }
 
 #profile-pic {
   width: 250px;
   height: auto;
   max-width: 500px;
-  margin-left: var(--margin-left);
+  margin-left: 300px;
   float: left;
   padding: 20px;
   min-width: 100px;
@@ -111,9 +111,9 @@ h1 {
 }
 
 p {
-  margin-left: var(--margin-left);
+  margin-left: 300px;
   text-align: center;
-  width: 75%;
+  width: 60vw;
   padding-top: 35px;
   font-size: 18px;
   letter-spacing: 1.2;
@@ -121,14 +121,15 @@ p {
 
 .web-grid {
   display: inline-grid;
-  justify-content: stretch;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  grid-template-areas: repeat(4, 400px) / repeat(2, 400px);
-  overflow: hidden;
-  width: 70%;
+  grid-template-areas: repeat(4, 200px) / repeat(2, 200px);
+  overflow: visible;
+  width: 50vw;
   height: auto;
-  margin-left: 20%;
+  margin-left: 30%;
+  gap: 25px
 }
   
 #web1 {
@@ -165,39 +166,46 @@ p {
   justify-content: space-evenly;
 }
 
-.web-img:hover
-.web-img1:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+.web-img:hover {
+  transform: scale(1.4);
 }
 
-.contact-links {
-  display: inline-flex;
-  justify-content: center;
-  padding: 20px;
-  margin-left: 30%;
-  font-size: 12pt;
+#web-img1:hover {
+  transform: scale(1.5);
 }
 
 .web-grid a {
   background-color: rgba(255,255,255,0.5);
   color: black;
   z-index: 3;
-  border: 5px solid black;
+  border: 5px solid rgb(29, 29, 29);
   padding: 20px;
   margin: 0px;
   text-align: center;
   font-size: 80pts;
 }
 
+.web-grid a:hover {
+ cursor: pointer;
+ background-color: rgb(162, 160, 160);
+}
+
+.info {
+  display: inline-block;
+  text-align: center;
+  width: 100vw;
+  font-size: 12pt;
+  font-weight:bold;
+  text-decoration: none;
+}
+
 footer {
-  position: block;
+  position: relative;
   text-align: center;
   font-weight: bold;
   width: 100%;
-  margin: 0;
-  color: black;
-  background-color: rgb(43, 43, 45);;
+  color: rgb(165, 164, 164);
+  background-color: rgb(119, 119, 120);
 }
 
 #top-btn {
@@ -210,7 +218,7 @@ footer {
   border: 2px solid; 
   outline: none; 
   background-color: rgb(200, 198, 198);
-  color: rgb(62, 61, 61); 
+  color: rgb(113, 112, 112); 
   cursor: pointer;
   padding: 5px; 
   border-radius: 10px;
@@ -222,14 +230,57 @@ footer {
   background-color: rgb(95, 94, 94);
 }
 
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  * {
-    width: 30%;
+  #nav {
+    width: 200px; float: left;
+    }
+
+  #hero-img {
+    object-fit: cover;
+    width: 100vw;
+    height: 30px;
+  } 
+  
+  .img-banner h2 {
+    position:fixed;
   }
+
+  #nav a {
+
+  }
+
+  .web-grid {
+
+  }
+  
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
- * {
-    width: 80%;
+  #nav {
+  width: 200px; float: left;
   }
+
+  #hero-img {
+    object-fit: cover;
+    width: 100vw;
+    height:100px;
+  } 
+  
+  .img-banner h2 {
+    margin-top: 10%;
+    margin-right: 50vw
+  }
+
+  #nav a {
+
+  }
+
+  .web-grid {
+
+  }
+
+  #top-btn {
+    left: 20px;
+}
 }

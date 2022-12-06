@@ -12,7 +12,7 @@ My portfolio is simple to follow. There is navigation menu at the top right whic
 * ADD SCREENSHOTS *
 
 
-Here is the link to the live [* site *],(https://lillyilex.github.io/CorrisPortfolio/) 
+Here is the link to the live site, enjoy! https://lillyilex.github.io/CorrisPortfolio/
 
 
 

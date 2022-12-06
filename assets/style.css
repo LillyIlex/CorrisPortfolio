@@ -138,7 +138,7 @@
   position: relative;
   grid-template-areas: repeat(4, 200px) / repeat(2, 200px);
   overflow: visible;
-  width: 80vw;
+  width: 70%;
   height: auto;
   margin-left: 30%;
   gap: 30px
@@ -188,7 +188,7 @@
 }
 
 .web-grid a {
-  display: grid;
+  display:inline-block;
   width: auto;
   background-color: rgba(255,255,255,0.8);
   color: var(--black);

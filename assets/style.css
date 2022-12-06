@@ -71,13 +71,15 @@
   font-weight: bold;
 }
 
-.link:hover {
+.link:hover,
+.contact-links:hover {
   transform: scale(1.2);
   cursor: pointer;
   transition-timing-function: linear;
 } 
 
-.link:visited {
+.link:visited,
+.contact-links:visited {
   color: rgb(227, 46, 185);
 }
 

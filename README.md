@@ -11,15 +11,15 @@ My portfolio is simple to follow. There is navigation menu at the top right whic
 
 
 ```md
-![Alt text](CorrisPortfolio/assets/Images/corris-portfolio1.png)
+![Landing page](MyPortfolio/assets/Images/corris-portfolio1.png)
 ```
 
 ```md
-![Alt text](CorrisPortfolio/assets/Images/website-link.png)
+![Website link highlighted with clickable link](MyPortfolio/assets/Images/website-link.png)
 ```
 
 ```md
-![Alt text](CorrisPortfolio/assets/Images/website-hover.png)
+![Website enlarged view upon hovering](MyPortfolio/assets/Images/website-hover.png)
 ```
 
 Here is the link to the live site, enjoy! https://lillyilex.github.io/CorrisPortfolio/

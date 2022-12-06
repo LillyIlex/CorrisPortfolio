@@ -9,9 +9,11 @@ There are links to my live web app's for you to check out, as well as a breif bi
 
 My portfolio is simple to follow. There is navigation menu at the top right which will take you to the 3 different sections of the page. There is also an image of my current websites in the 'work' section. Each title box is a clickable link that will take you to the full site for you to have a look around. Upon browsing and hovering, the images will enlarge a little for you to take a closer look, without leaving the current page. There is also a 'back to top' button to quicken the process of heading back to the navigation menu to further browse.
 
-![Alt text](assets/images/portfolio.png)
-![Alt text](assets/images/website-link.png)
-![Alt text](assets/images/website-hover.png)
+![Alt text](CorrisPortfolio/assets/Images/corris-portfolio1.png)
+
+![Alt text]CorrisPortfolio/assets/Images/website-link.png)
+
+![Alt text](CorrisPortfolio/assets/Images/website-hover.png)
 
 Here is the link to the live site, enjoy! https://lillyilex.github.io/CorrisPortfolio/
 

@@ -252,10 +252,10 @@ footer p {
 
   .img-banner h1 {
     max-width: 95vw;
-    font-size: 15pt;
+    font-size: 14pt;
     text-align: left;
     text-shadow: none;
-    color: var(--mid-grey)
+    color: var(--dark-grey)
   }
 
   .img-banner h2,
@@ -290,12 +290,18 @@ footer p {
     height: auto;
   }
 
+  #profile-pic:hover {
+    transform: scale(1.0);
+  }
+
+
   .main p {
     font-size: 11pt;
     text-align: left;
     margin-left: 5px;
     width: 93vw;
     padding-top: 5px;
+    transform: scale(1);
   }
 
   .web-grid {
@@ -337,7 +343,7 @@ footer p {
     font-size: 34pt;
     text-align: left;
     text-shadow: none;
-    color: var(--mid-grey)
+    color: var(--dark-grey)
   }
 
   .img-banner h2,
@@ -366,6 +372,10 @@ footer p {
     padding: 5px;
     width: 45vw;
     height: auto;
+  }
+
+  #profile-pic:hover {
+    transform: scale(1.0);
   }
 
   .main p {
